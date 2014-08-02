@@ -1,0 +1,12 @@
+{
+  "name"         : "Learn-o-saurus",
+  "version"      : "0.0.1",
+  "description"  : "Learn it all!",
+  "main"         : "app.js",
+  "author"       : "Oli Woo and Abu Alix",
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest"
+  }
+}

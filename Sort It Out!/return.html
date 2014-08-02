@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<!-- Styles & Scripts -->
+<link rel="stylesheet" href="main.css" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<!-- End of Styles & Scripts-->
+
+<title>Learn-O-Saurus : Search</title>
+</head>
+
+<body>
+<center><img src="images/logo.png" draggable="false" /></center>
+<br />
+<div id="container"><a href="index.html"><input type="button" name="btn" class="btn-style" value="GO BACK" /></a></div> 
+<br />
+<div id="box"><h2 style="float:left;">Cattle</h2><br /><br /><br />
+  <h4 style="text-align:justify"><li>Cattle (colloquially cows) are the most common type of large domesticated ungulates.</li><br /><br /><li>They are a prominent modern member of the subfamily Bovinae, are the most widespread species of the genus Bos, and are most commonly classified collectively as Bos taurus.</li><br /><br /><li>Cattle are raised as livestock for meat (beef and veal), as dairy animals for milk and other dairy products, and as draft animals (oxen or bullocks) (pulling carts, plows and the like).</li></h4>
+</div>    <br /><br />
+    <a href="#">
+</center>
+<script type="text/jscript">
+maxCharacters = 25;
+
+$('#count').text(maxCharacters);
+
+$('input').bind('keyup keydown', function() {
+    var count = $('#count');
+    var characters = $(this).val().length;
+    
+    if (characters > maxCharacters) {
+        count.addClass('over');
+    } else {
+        count.removeClass('over');
+    }
+    
+    count.text(maxCharacters - characters);
+});
+
+</script>
+</body>
+</html>
